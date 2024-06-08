@@ -1,2 +1,2 @@
-# dimpikr18.github.io
+# dimple-ast.github.io
 My personal website
