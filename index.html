@@ -15,12 +15,12 @@
     <nav>
         <ul>
             <li><a class="nav-link" href="#intro">About</a></li>
-            <li><a class="nav-link" href="#research">Research Interests</a></li>
             <li><a class="nav-link" href="#experience">Experience</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#research">Research Interests</a></li>
+    
             <li><a class="nav-link" href="#Publications">Publications</a></li>
             <li><a class="nav-link" href="#outreach">Outreach</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li><a class="nav-link" href="#footer">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -124,19 +124,20 @@
         /* Right Side - About Me */
         .right-side {
             flex: 2;
-            padding: 20px;
+            padding: 1px;
         }
 
         .right-side h2 {
-            font-size: 32px;
+            font-size: 24px;
             color: #f39c12;
             margin-bottom: 15px;
         }
 
         .right-side p {
             font-size: 20px;
-            line-height: 1.8;
+            line-height: 1;
             color: #bbb;
+            text-align: justify;
         }
 
         /* Tiles (Education, Research, Personal Interests) */
@@ -268,37 +269,17 @@
             <img src="assets/my_files/Dimple.jpg" alt="Dimple">
             <h1>Dimple</h1>
             <h3>Postdoctoral Fellow</h3>
-            <p>University of Birmingham, UK</p>
+            <p>University of Birmingham, United Kingdom</p>
         </div>
 
         <!-- Right Side: About Me -->
         <div class="right-side">
             <h2>About Me</h2>
             <p>
-                I am a postdoctoral researcher in High Energy Astrophysics, specializing in Gamma-Ray Bursts (GRBs) and their cosmic significance.
-                My journey began at Kurukshetra University, where I earned my M.Sc. in Physics, followed by a PhD at DDU Gorakhpur University.
-                I integrate observational data with machine learning to explore the universe's most energetic events.
+                I am a Postdoctoral Fellow at the University of Birmingham, specializing in high-energy astrophysics, with a focus on Gamma-Ray Bursts (GRBs). My research focuses on understanding these powerful cosmic phenomena and their connection to the early universe and the formation of heavy elements. I grew up in the rural village of Kaul, near Kurukshetra, where I completed my schooling and undergraduate studies. I then pursued my PhD at the Aryabhatta Research Institute of Observational Sciences (ARIES) in Nainital, a place that also allowed me to indulge in my love for nature. Long treks in the lower Himalayan range have been a source of inspiration, teaching me valuable lessons about staying calm and focused when faced with challenges. 
+                When I'm not immersed in my research, you'll likely find me playing badminton, connecting with people from different cultures, trekking, and most probably dancing, which is a stress reliever for me and helps me unwind and stay energized. I’m always eager to learn new things and connect with others. Feel free to reach out if you'd like to collaborate, share ideas, or discuss anything related to my work or beyond.
             </p>
 
-            <!-- Info Tiles -->
-            <!-- <div class="info-tiles">
-                <div class="tile" onclick="toggleInfo('eduInfo', this)">
-                    <h4>Education</h4>
-                    <p id="eduInfo">PhD in Astrophysics from Aryabhatta Research Institute of Observational Sciences (ARIES).</p>
-                </div>
-
-                <div class="tile" onclick="toggleInfo('researchInfo', this)">
-                    <h4>Research Interests</h4>
-                    <p id="researchInfo">Studying Gamma-Ray Bursts and their role in understanding cosmic evolution.</p>
-                </div>
-
-                <div class="tile" onclick="toggleInfo('personalInfo', this)">
-                    <h4>Personal Interests</h4>
-                    <p id="personalInfo">Avid traveler and dancer, enjoying diverse cultures and rhythms.</p>
-                </div>
-            </div> -->
-
-            <!-- CV Link -->
             <div class="cv-link">
                 <a href="assets/my_files/Dimple_CV.pdf" class="gradient-button">Curriculum Vitae</a>
             </div>
@@ -469,11 +450,11 @@
                     <strong>Post Doctoral Fellow, University of Birmingham</strong>
                     <p>Conducting research on GRBs and gravitational wave counterparts using advanced data analysis techniques.</p>
                 </div>
-                <span class="year">2024-Present</span>
+                <span class="gradient-button">2024-Present</span>
             </div>
 
             <div class="experience-wrapper right">
-                <span class="year">2023-2024</span>
+                <span class="gradient-button">2023-2024</span>
                 <div class="experience-item">
                     <strong>Post Doctoral Fellow, Chennai Mathematical Institute</strong>
                     <p>Applied machine learning to classify GRB progenitors and analyze high-energy data.</p>
@@ -485,11 +466,11 @@
                     <strong>Senior Research Fellow, ARIES</strong>
                     <p>Characterized the 4K x 4K CCD Camera for the 3.6m DOT and led observational campaigns.</p>
                 </div>
-                <span class="year">2020-2023</span>
+                <span class="gradient-button">2020-2023</span>
             </div>
 
             <div class="experience-wrapper right">
-                <span class="year">2018-2020</span>
+                <span class="gradient-button">2018-2020</span>
                 <div class="experience-item">
                     <strong>Junior Research Fellow, ARIES</strong>
                     <p>Conducted observations with 1.3m DFOT and 1m ST telescopes, contributing to GRB research.</p>
@@ -503,7 +484,7 @@
 <style>
 /* Research Section Background */
 #research {
-    background: url('assets/my_files/grb.gif') no-repeat center center;
+    background: url('assets/my_files/background.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -524,12 +505,14 @@
 
 /* Title Section */
 .research-title h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #f4a261;
     margin-bottom: 15px;
 }
 .research-title p {
-    font-size: 1.2em;
+    font-size: 1em;
+    line-height: 1;
+    text-align: justify;
     color: #ddd;
     margin-bottom: 30px;
 }
@@ -584,97 +567,136 @@
 
 
 
+
+
+<style>
+/* Research Container */
+.research-container {
+    width: 80vw;
+    max-width: 1100px;
+    padding: 4%;
+    background: rgba(10, 10, 10, 0.85); /* Dark semi-transparent box */
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(255, 165, 0, 0.3);
+    text-align: center;
+}
+/* Research Grid */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Grid Box Styling */
+.grid-box {
+    background: rgba(40, 40, 40, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.2);
+    transition: transform 0.3s ease-in-out, background 0.3s;
+    border: 2px solid rgba(255, 165, 0, 0.5);
+    position: relative;
+    cursor: pointer;
+}
+
+/* Ensure Image is Not Cropped */
+.grid-box img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Titles */
+.grid-box h4 {
+    font-size: 1.2em;
+    color: #f4a261;
+    margin-bottom: 8px;
+}
+
+/* Short Text (Visible by Default) */
+.short-text {
+    font-size: 0.7em;
+    line-height: 1;
+    color: #ddd;
+    text-align: justify;
+}
+
+/* Full Text (Hidden by Default) */
+.full-text {
+    font-size: 0.7em;
+    color: #ddd;
+    display: none;
+    margin-top: 10px;
+}
+
+/* Click Effect */
+.grid-box.active {
+    background: rgba(255, 165, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+</style>
+
 <!-- Research Interests & Projects -->
 <section id="research" class="main custom-style fullscreen">
     <div class="research-container">
-        <!-- Title Section -->
+        <!-- Research Interests Intro -->
         <div class="research-title">
             <h2>Research Interests</h2>
             <p>
-                My research focuses on <strong>high-energy transients</strong>, particularly <strong>Gamma-Ray Bursts (GRBs)</strong>, 
-                compact binary mergers, and collapsars. I utilize <strong>multi-wavelength observations</strong> and <strong>machine learning</strong> 
-                to explore their origins and significance in astrophysics.
+                My research focuses on <strong>high-energy transients</strong>, particularly <strong>Gamma-Ray Bursts (GRBs)</strong>, compact binary mergers, and collapsars.  
+                I utilize <strong>multi-wavelength observations</strong> and <strong>machine learning</strong> to explore their origins and significance in astrophysics.
             </p>
         </div>
 
-        <!-- Project Tiles -->
+        <!-- Research Grid (2x2) -->
         <div class="research-grid">
-            <div class="research-card">
+            <div class="grid-box" onclick="toggleText(this)">
+                <img src="assets/images/figure1.png" alt="Classification of GRBs">
                 <h4>Classification of GRBs</h4>
-                <p>
-                    Using <strong>machine learning</strong>, I analyze GRB properties beyond the traditional short/long classification.  
-                    Techniques like <strong>UMAP embeddings and clustering</strong> help uncover <strong>hidden structures in GRB populations</strong>.
+                <p class="short-text">
+                    Using machine learning, I analyze GRB properties beyond the traditional short/long classification, which has faced many challenges recently. Techniques like UMAP embeddings and clustering help uncover hidden structures in GRB populations, offering new insights into their diverse physical origins. By leveraging large datasets and advanced algorithms, my work aims to identify novel GRB classes and refine classification accuracy. This approach not only deepens our understanding of GRBs but also has potential applications in identifying unique astrophysical events.
                 </p>
             </div>
-            <div class="research-card">
+
+            <div class="grid-box" onclick="toggleText(this)">
+                <img src="assets/images/figure2.png" alt="Merger Rate Estimations">
                 <h4>Merger Rate Estimations</h4>
-                <p>
-                    In collaboration with <strong>Shahvath</strong>, I estimate <strong>compact binary merger rates</strong> using GRB and <strong>gravitational wave data</strong>.  
-                    This work refines predictions for future <strong>GW detections</strong> and constrains merger evolution.
-                </p>
+                <p class="short-text">
+                    We analyze the rates of compact binary mergers by combining data from Gamma-Ray Bursts (GRBs) and gravitational wave (GW) observations. By correlating GRB signals with GW detections, I aim to refine our understanding of merger rates and the distribution of compact binary systems across different environments and redshifts. This work enhances our knowledge of binary merger populations and contributes to multi-messenger astronomy.
             </div>
-            <div class="research-card">
+
+            <div class="grid-box" onclick="toggleText(this)">
+                <img src="assets/images/figure3.png" alt="Short GRB Progenitors">
                 <h4>Short GRB Progenitors</h4>
-                <p>
-                    Conducting <strong>optical/NIR follow-ups</strong>, I study the environments of <strong>short GRBs</strong>, investigating their progenitors  
-                    and potential <strong>kilonova counterparts</strong> from compact binary mergers.
+                <p class="short-text">
+                    My research focuses on the progenitors of short-duration GRBs, exploring their connection to compact binary mergers and collapsars. By studying short GRBs at high redshifts, I aim to probe the early universe, enhancing our understanding of stellar evolution and galaxy formation. This work includes analyzing observational data to estimate redshifts and refine models of GRB origins, while also participating in follow-up campaigns to observe GRB afterglows and search for associated phenomena like kilonovae.
+                </p>
+            </div>
+
+            <div class="grid-box" onclick="toggleText(this)">
+                <img src="assets/images/figure4.png" alt="High-Redshift GRBs">
+                <h4>Kilonovae: Identification, Rates, and JWST Observations</h4>
+                <p class="short-text">
+                    This work focuses on the identification and study of kilonovae, the transient events resulting from compact binary mergers, such as neutron star mergers. By analyzing the observational signatures of kilonovae, including light curve patterns and spectral features, I aim to refine methods for their detection. Additionally, I investigate the rates of kilonovae, linking them to the underlying compact binary merger rates. With the upcoming capabilities of the James Webb Space Telescope (JWST), I plan to enhance kilonova detection at high redshifts, providing deeper insights into their role in r-process nucleosynthesis and their contribution to heavy element formation in the universe.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-
-    
-<!-- Research Interests & Projects -->
-<section id="research" class="main custom-style fullscreen">
-    <div class="research-container">
-        <!-- Research Interests -->
-        <div class="research-intro">
-            <h2>Research Interests</h2>
-            <p>
-                My research focuses on **high-energy transients**, particularly **Gamma-Ray Bursts (GRBs)**, compact binary mergers, and collapsars.  
-                I utilize **multi-wavelength observations** and **machine learning** to explore their origins and significance in astrophysics.
-            </p>
-        </div>
-
-        <!-- Carousel -->
-        <div class="carousel-container">
-            <div class="carousel">
-                <!-- Slide 1 -->
-                <div class="slide">
-                    <h4>Classification of GRBs</h4>
-                    <p>
-                        Using **machine learning**, I analyze GRB properties beyond the traditional short/long classification.  
-                        Techniques like **UMAP embeddings and clustering** help uncover **hidden structures in GRB populations**.
-                    </p>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="slide">
-                    <h4>Merger Rate Estimations</h4>
-                    <p>
-                        In collaboration with **Shahvath**, I estimate **compact binary merger rates** using GRB and **gravitational wave data**.  
-                        This work refines predictions for future **GW detections** and constrains merger evolution.
-                    </p>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="slide">
-                    <h4>Short GRB Progenitors</h4>
-                    <p>
-                        Conducting **optical/NIR follow-ups**, I study the environments of **short GRBs**, investigating their progenitors  
-                        and potential **kilonova counterparts** from compact binary mergers.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Navigation Buttons -->
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
-    </div>
-</section>
 
 
 
@@ -738,13 +760,17 @@
     
     /* Title Styling */
     .publications-container h2 {
-        font-size: 2.5em;
+        font-size: 2em;
+        line-height: 1;
+        text-align: justify;
         color: #f4a261;
         margin-bottom: 15px;
     }
     .publications-container h3 {
-        font-size: 1.8em;
+        font-size: 1em;
         color: #ddd;
+        line-height: 1;
+        text-align: justify;
         margin-top: 30px;
     }
     
@@ -754,7 +780,9 @@
         padding: 0;
     }
     .publications-container li {
-        font-size: 1.1em;
+        font-size: 1.em;
+        line-height: 1.3;
+        
         color: #ddd;
         margin: 10px 0;
         text-align: left;
@@ -781,9 +809,11 @@
     
     /* GCN List Styling */
     .gcn-list {
-        font-size: 1.1em;
-        color: #ddd;
+        font-size: 1em;
+        line-height: 1;
         text-align: justify;
+        color: #ddd;
+       
         margin: 20px auto;
         max-width: 900px;
     }
@@ -812,7 +842,7 @@
         </header>
 
         <!-- Refereed Publications -->
-        <h3>Refereed Publications</h3>
+        <h3>Refereed Publications (selected)</h3>
         
         <ul>
             <li><i>Rates and beaming angles of GRBs associated with compact binary coalescences</i> 
