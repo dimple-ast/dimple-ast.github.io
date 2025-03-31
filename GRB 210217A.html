@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Overview</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Custom styles for Research Overview page */
+        .research-overview-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            align-items: flex-start;
+        }
+
+        .text-side {
+            width: 55%;
+            padding-right: 20px;
+        }
+
+        .image-side {
+            width: 40%;
+        }
+
+        .image-side img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .research-button {
+            background: transparent;
+            border: 2px solid #333;
+            border-radius: 50px;
+            padding: 10px 20px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .research-button:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        p {
+            text-align: justify;
+            color: black;
+        }
+
+        h2, h3 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Research Overview Section -->
+    <section id="research-overview" class="main custom-style">
+        <div class="research-overview-container">
+            <!-- Text Content on the Left -->
+            <div class="text-side">
+                <header>
+                    <h2>Research Overview</h2>
+                </header>
+                <p>
+                    The paper focuses on the classification of gamma-ray burst (GRB) 210217A, a recent event that falls near the boundary between short and long GRBs. GRBs are typically divided into two categories based on their duration (T90), with short bursts lasting less than 2 seconds and long bursts exceeding that threshold. However, the classification of GRBs based solely on T90 can be challenging due to variations in detector sensitivity, redshift, and energy band observations. The study introduces alternative classification methods using hardness ratio (HR), spectral lag, energetics, and other characteristics.
+
+GRB 210217A presents an unusual case, with Swift reporting it as a long GRB based on a duration of 4.22 seconds, while Fermi suggests it could be short due to a reported duration of 1.024 seconds. To resolve this ambiguity, the authors performed multi-wavelength observations and conducted a detailed analysis, estimating the GRB’s redshift and calculating its isotropic equivalent energy and peak energy. Their findings place GRB 210217A on the boundary between short and long GRBs in the Amati plane. Despite a probability favoring its classification as a short GRB based on various metrics, some characteristics also align with long GRBs.
+
+Ultimately, the paper concludes that further host galaxy observations are required to definitively classify GRB 210217A, as the host environments of long and short GRBs differ, with long GRBs typically found in star-forming regions and short GRBs in older galaxies with larger offsets from the galaxy center.
+                </p>
+                <p>
+                    One of my key areas of investigation is understanding the origin and classification of different types of GRBs, such as short and long bursts. I am particularly interested in studying these phenomena at high redshifts, which allows us to probe the early universe.
+                </p>
+                <h3>Key Research Areas</h3>
+                <ul>
+                    <li>Gamma-Ray Bursts and their counterparts</li>
+                    <li>High-energy transients and their connection to stellar evolution</li>
+                    <li>Compact binaries and collapsars</li>
+                </ul>
+                <footer>
+                    <a href="assets/documents/research_summary.pdf" class="research-button">Download Research Summary</a>
+                </footer>
+            </div>
+            <!-- Image/GIF on the Right -->
+            <div class="image-side">
+                <img src="assets/my_files/grb_overview.gif" alt="Gamma-Ray Burst Overview" />
+            </div>
+        </div>
+    </section>
+</body>
+</html>

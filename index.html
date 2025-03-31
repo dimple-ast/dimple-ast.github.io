@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Dimple</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="#intro">Dimple</a></h1>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="#intro">About</a></li>
+                <li><a class="nav-link" href="#research">Research Interests</a></li>
+                <li><a class="nav-link" href="#experience">Experience</a></li> <!-- New -->
+                <!-- <li><a class="nav-link" href="#skills">Skills</a></li> New -->
+                <li><a class="nav-link" href="#projects">Projects</a></li> <!-- New -->
+                <li><a class="nav-link" href="#Publications">Publications</a></li>
+                <!-- <li><a class="nav-link" href="assets/my_files/Dimple_CV.pdf" target="_blank">CV</a></li> -->
+                <li><a class="nav-link" href="#outreach">Outreach</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Intro -->
+    <section id="intro" class="main style1 dark fullscreen" style="background: url('assets/my_files/background.jpg') no-repeat center center; background-size: cover;">
+        <div class="content">
+            <!-- Left Side: Profile Image and Info -->
+            <div class="left-side">
+                <img src="assets/my_files/Dimple.jpg" alt="Dimple" style="width: 350px; height: auto; border-radius: 50%; margin-bottom: 10px;" />
+                <h1>Dimple</h1>
+                <h3>Postdoctoral Fellow</h3>
+                <p>University of Birmingham, UK</p>
+            </div>
+
+            <!-- Right Side: About Me and Three Windows -->
+            <div class="right-side">
+                <h4>About Me</h4>
+                <p>
+                    I am a postdoctoral researcher in High Energy Astrophysics, specializing in Gamma-Ray Bursts (GRBs) and their cosmic significance. My journey began at Kurukshetra University, where I earned my M.Sc. in Physics, followed by a PhD at DDU Gorakhpur University and postdoctoral research at prestigious institutions. I combine observational data with machine learning to explore the universe's most energetic phenomena.
+                </p>
+                <div style="margin-top: 20px;"></div>
+                <div style="display: flex; justify-content: space-between;">
+                    <div class="window" onclick="toggleInfo('eduInfo', this)">
+                        <h4>Education</h4>
+                        <p id="eduInfo" style="display: none;">PhD in Astrophysics from Aryabhatta Research Institute of Observational Sciences (ARIES).</p>
+                    </div>
+                    <div class="window" onclick="toggleInfo('researchInfo', this)">
+                        <h4>Research Interests</h4>
+                        <p id="researchInfo" style="display: none;">Studying Gamma-Ray Bursts and their role in understanding cosmic evolution.</p>
+                    </div>
+                    <div class="window" onclick="toggleInfo('personalInfo', this)">
+                        <h4>Personal Interests</h4>
+                        <p id="personalInfo" style="display: none;">Avid traveler and dancer, enjoying diverse cultures and rhythms.</p>
+                    </div>
+                </div>
+                <p style="margin-top: 20px;">
+                     <a href="assets/my_files/Dimple_CV.pdf"" style="color: white; text-decoration: underline;"> Click here for my CV</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleInfo(infoId, clickedElement) {
+            const info = document.getElementById(infoId);
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+    </script>
+
+
+<!-- Research Interests & Projects -->
+<section id="research" class="main custom-style fullscreen" 
+    style="background: url('assets/my_files/grb.gif') no-repeat center center; background-size: cover; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+
+    <!-- Centered Research Interests Heading -->
+    <div style="width: 80%; max-width: 900px;">
+        <h2 style="text-align: center;">Research Interests</h2>
+        <p>
+            My research focuses on **high-energy transients**, particularly **Gamma-Ray Bursts (GRBs)**, compact binary mergers, and collapsars.  
+            I utilize **multi-wavelength observations** and **machine learning** to explore their origins and significance in astrophysics.
+        </p>
+    </div>
+
+    <!-- Three Fixed Project Blocks Below (Centered) -->
+    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap: wrap; width: 90%;">
+        <div class="window" style="width: 300px; text-align: center;">
+            <h4>Classification of GRBs</h4>
+            <p>
+                Using **machine learning**, I analyze GRB properties beyond the traditional short/long classification.  
+                Techniques like **UMAP embeddings and clustering** help uncover **hidden structures in GRB populations**.
+            </p>
+        </div>
+        <div class="window" style="width: 300px; text-align: center;">
+            <h4>Merger Rate Estimations</h4>
+            <p>
+                In collaboration with **Shahvath**, I estimate **compact binary merger rates** using GRB and **gravitational wave data**.  
+                This work refines predictions for future **GW detections** and constrains merger evolution.
+            </p>
+        </div>
+        <div class="window" style="width: 300px; text-align: center;">
+            <h4>Short GRB Progenitors</h4>
+            <p>
+                Conducting **optical/NIR follow-ups**, I study the environments of **short GRBs**, investigating their progenitors  
+                and potential **kilonova counterparts** from compact binary mergers.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+    <!-- Experience -->
+    <section id="experience" class="main custom-style fullscreen">
+        <div class="content-container">
+            <header>
+                <h2>Experience</h2>
+            </header>
+            <ul>
+                <li>
+                    <strong>Post Doctoral Fellow, University of Birmingham</strong> (July 2024–Present)
+                    <p>Conducting research on GRBs and gravitational wave counterparts using advanced data analysis techniques.</p>
+                </li>
+                <li>
+                    <strong>Post Doctoral Fellow, Chennai Mathematical Institute</strong> (Nov 2023–June 2024)
+                    <p>Applied machine learning to classify GRB progenitors and analyze high-energy data.</p>
+                </li>
+                <li>
+                    <strong>Senior Research Fellow, ARIES</strong> (July 2020–Nov 2023)
+                    <p>Characterized the 4K x 4K CCD Camera for the 3.6m DOT and led observational campaigns.</p>
+                </li>
+                <li>
+                    <strong>Junior Research Fellow, ARIES</strong> (July 2018–July 2020)
+                    <p>Conducted observations with 1.3m DFOT and 1m ST telescopes, contributing to GRB research.</p>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+
+    
+<!-- Research Interests & Projects -->
+<section id="research" class="main custom-style fullscreen">
+    <div class="research-container">
+        <!-- Research Interests -->
+        <div class="research-intro">
+            <h2>Research Interests</h2>
+            <p>
+                My research focuses on **high-energy transients**, particularly **Gamma-Ray Bursts (GRBs)**, compact binary mergers, and collapsars.  
+                I utilize **multi-wavelength observations** and **machine learning** to explore their origins and significance in astrophysics.
+            </p>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <h4>Classification of GRBs</h4>
+                    <p>
+                        Using **machine learning**, I analyze GRB properties beyond the traditional short/long classification.  
+                        Techniques like **UMAP embeddings and clustering** help uncover **hidden structures in GRB populations**.
+                    </p>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <h4>Merger Rate Estimations</h4>
+                    <p>
+                        In collaboration with **Shahvath**, I estimate **compact binary merger rates** using GRB and **gravitational wave data**.  
+                        This work refines predictions for future **GW detections** and constrains merger evolution.
+                    </p>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <h4>Short GRB Progenitors</h4>
+                    <p>
+                        Conducting **optical/NIR follow-ups**, I study the environments of **short GRBs**, investigating their progenitors  
+                        and potential **kilonova counterparts** from compact binary mergers.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Skills
+    <section id="skills" class="main custom-style fullscreen">
+        <div class="content-container">
+            <header>
+                <h2>Skills</h2>
+            </header>
+            <div style="display: flex; justify-content: space-around;">
+                <div>
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>MATLAB</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Software & Tools</h4>
+                    <ul>
+                        <li>Astropy</li>
+                        <li>IRAF</li>
+                        <li>SKlearn</li>
+                        <li>Photutils</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Technical Skills</h4>
+                    <ul>
+                        <li>Data Analysis & Visualization</li>
+                        <li>Machine Learning</li>
+                        <li>Observational Astronomy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- Publications -->
+    <section id="Publications" class="main custom-style fullscreen">
+        <div class="content-container">
+            <header>
+                <h2>Publications</h2>
+            </header>
+
+            <h3>Refereed Publications</h3>
+            <ul>
+                <li><i>Rates and beaming angles of GRBs associated with compact binary coalescences</i> 
+                    [<a href="https://doi.org/10.3847/2041-8213/ad8dc7" target="_blank">Kapadiya S., <b>Dimple</b>, Jain D. et al. 2024, ApJL, 976, 1</a>]
+                </li>
+                <li><i>Diversity in Fermi/GBM Gamma Ray Bursts: New insights from Machine Learning</i> 
+                    [<a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad6d6a/pdf" target="_blank"><b>Dimple</b>, Misra, K., & Arun, K. G. 2024, ApJ, 974, 55</a>]
+                </li>
+                <li><i>Evidence for Two Distinct Populations of Kilonova-associated Gamma-Ray Bursts</i>  
+                    [<a href="https://iopscience.iop.org/article/10.3847/2041-8213/acd4c4" target="_blank"><b>Dimple</b>, Misra, K., & Arun, K. G. 2023, ApJL, 949, L22</a>]
+                </li>
+                <li><i>Characterization of a deep-depletion 4K × 4K charge-coupled device detector system designed for ARIES Devasthal faint object spectrograph</i> 
+                    [<a href="https://www.spiedigitallibrary.org/journals/Journal-of-Astronomical-Telescopes-Instruments-and-Systems/volume-9/issue-1/018002/Characterization-of-a-deep-depletion-4K--4K-charge-coupled/10.1117/1.JATIS.9.1.018002.short" target="_blank"><b>Dimple</b>, T.S. Kumar, A. Omar and K. Misra, 2023, JATIS, 9, 018002</a>]
+                </li>
+                <li><i>Multiwavelength analysis of short GRB 201221D and its comparison with other high & low redshift short GRBs</i>  
+                    [<a href="https://doi.org/10.1093/mnras/stac2162" target="_blank"><b>Dimple</b>, Misra, K., Kann, D. A., et al. 2022, MNRAS, 516, 1</a>]
+                </li>
+                <li><i>GRB 210217A: a short or a long GRB?</i> 
+                    [<a href="https://doi.org/10.1007/s12036-022-09822-x" target="_blank"><b>Dimple</b>, Misra, K., Ghosh, A., et al. 2022, JAA, 43, 39</a>]
+                </li>
+                <li><i>Investigating high redshift short GRBs: signatures of collapsars?</i>  
+                    [<a href="https://popups.uliege.be/0037-9565/index.php?id=11833" target="_blank"><b>Dimple</b>, Misra, K., & Yadav, L. 2023, The Bulletin of Liège Royal Society of Sciences, Volume 93, 2, 670-682</a>]
+                </li>
+                <li><i>Insights into the properties of GRBs with TeV emission</i>  
+                    [<a href="https://popups.uliege.be/0037-9565/index.php?id=11857" target="_blank">Misra, K., <b>Dimple</b> & Ghosh A. 2024, The Bulletin of Liège Royal Society of Sciences, Volume 93, 2, 727-737</a>]
+                </li>
+                <li><i>Prompt emission properties of GRB 200613</i>  
+                    [<a href="https://popups.uliege.be/0037-9565/index.php?id=11853" target="_blank">Ghosh A., Misra, K. & <b>Dimple</b> 2024, The Bulletin of Liège Royal Society of Sciences, Volume 93, 2, 719-726</a>]
+                </li>
+            </ul>
+        
+            <h3>Non-Refereed Publications</h3>
+            <p>Gamma-ray Burst Coordinates Network (GCN) circulars reported with GCN serial numbers:</p>
+            <p>
+                26870 &bull; 27473 &bull; 27564 &bull; 27603 &bull; 27764 &bull; 27803 &bull; 27806 &bull; 27838 &bull;
+                28686 &bull; 28689 &bull; 28772 &bull; 28781 &bull; 28782 &bull; 28789 &bull; 28860 &bull; 29030 &bull;
+                29091 &bull; 29148 &bull; 29173 &bull; 29257 &bull; 29301 &bull; 29308 &bull; 29345 &bull; 29364 &bull;
+                29421 &bull; 29488 &bull; 29490 &bull; 29510 &bull; 29518 &bull; ...
+            </p>
+            <p>Find my full list of publications on <a href="https://ui.adsabs.harvard.edu/">ADS</a>.</p>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact -->
+    <section id="outreach" class="main custom-style fullscreen">
+        <div class="content-container">
+            <header>
+                <h2>Outreach & Public Engagement</h2>
+                <p>
+                    I am actively involved in outreach activities to communicate astrophysical research to the broader public. 
+                    My outreach efforts include <strong>public lectures, educational workshops, and science communication</strong> 
+                    aimed at inspiring the next generation of scientists.
+                </p>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="main custom-style fullscreen">
+        <div class="content-container">
+            <header>
+                <h2>Contact</h2>
+            </header>
+            <p>Feel free to reach out to me for collaboration or discussion.</p>
+            <ul>
+                <li>Email: dimple@example.com</li>
+                <li>University: University of Birmingham, UK</li>
+                <li>Twitter: <a href="https://twitter.com/example"> @example</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+        </ul>
+        <ul class="menu">
+            <li>© Dimple</li>
+        </ul>
+    </footer>
+
+
+    
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
+
+
