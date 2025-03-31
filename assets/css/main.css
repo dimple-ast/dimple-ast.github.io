@@ -621,9 +621,9 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #ffffff;
+		background: #010101;
 		color: #39454b;
-		padding: 2em;
+		padding: 0.2em;
 	}
 
 		.box > :last-child {
