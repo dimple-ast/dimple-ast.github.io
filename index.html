@@ -65,86 +65,387 @@
     }
 </style>
 
+<!-- Intro -->
+<section id="intro" class="main fullscreen">
+    <style>
+        /* Intro Section Styling */
+        #intro {
+            background: url('assets/my_files/background.jpg') no-repeat center center;
+            background-size: cover;
+            color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+        }
 
-        
-    <!-- Intro -->
-    <section id="intro" class="main style1 dark fullscreen" style="background: url('assets/my_files/background.jpg') no-repeat center center; background-size: cover;">
-        <div class="content">
-            <!-- Left Side: Profile Image and Info -->
-            <div class="left-side">
-                <img src="assets/my_files/Dimple.jpg" alt="Dimple" style="width: 350px; height: auto; border-radius: 50%; margin-bottom: 10px;" />
-                <h1>Dimple</h1>
-                <h3>Postdoctoral Fellow</h3>
-                <p>University of Birmingham, UK</p>
-            </div>
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1400px;
+            width: 100%;
+            background: rgba(20, 20, 20, 0.8);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 20px rgba(255, 165, 0, 0.3);
+        }
 
-            <!-- Right Side: About Me and Three Windows -->
-            <div class="right-side">
-                <h4>About Me</h4>
-                <p>
-                    I am a postdoctoral researcher in High Energy Astrophysics, specializing in Gamma-Ray Bursts (GRBs) and their cosmic significance. My journey began at Kurukshetra University, where I earned my M.Sc. in Physics, followed by a PhD at DDU Gorakhpur University and postdoctoral research at prestigious institutions. I combine observational data with machine learning to explore the universe's most energetic phenomena.
-                </p>
-                <div style="margin-top: 20px;"></div>
-                <div style="display: flex; justify-content: space-between;">
-                    <div class="window" onclick="toggleInfo('eduInfo', this)">
-                        <h4>Education</h4>
-                        <p id="eduInfo" style="display: none;">PhD in Astrophysics from Aryabhatta Research Institute of Observational Sciences (ARIES).</p>
-                    </div>
-                    <div class="window" onclick="toggleInfo('researchInfo', this)">
-                        <h4>Research Interests</h4>
-                        <p id="researchInfo" style="display: none;">Studying Gamma-Ray Bursts and their role in understanding cosmic evolution.</p>
-                    </div>
-                    <div class="window" onclick="toggleInfo('personalInfo', this)">
-                        <h4>Personal Interests</h4>
-                        <p id="personalInfo" style="display: none;">Avid traveler and dancer, enjoying diverse cultures and rhythms.</p>
-                    </div>
-                </div>
-                <p style="margin-top: 20px;">
-                     <a href="assets/my_files/Dimple_CV.pdf"" style="color: white; text-decoration: underline;"> Click here for my CV</a>.
-                </p>
-            </div>
-        </div>
-    </section>
+        /* Left Side - Profile */
+        .left-side {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
 
-    <script>
-        function toggleInfo(infoId, clickedElement) {
-            const info = document.getElementById(infoId);
-            if (info.style.display === 'none' || info.style.display === '') {
-                info.style.display = 'block';
-            } else {
-                info.style.display = 'none';
+        .left-side img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 2px  solid #C0C0C0;
+            box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.4);
+        }
+
+        .left-side h1 {
+            font-size: 30px;
+            color: #f39c12;
+            margin-top: 10px;
+        }
+
+        .left-side h3 {
+            font-size: 22px;
+            color: #bbb;
+        }
+
+        .left-side p {
+            font-size: 18px;
+            color: #bbb;
+        }
+
+        /* Right Side - About Me */
+        .right-side {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .right-side h2 {
+            font-size: 28px;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .right-side p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #bbb;
+        }
+
+        /* Tiles (Education, Research, Personal Interests) */
+        .info-tiles {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .tile {
+            background: rgba(40, 40, 40, 0.8);
+            width: 30%;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.2);
+            transition: transform 0.3s ease-in-out, background 0.3s;
+        }
+
+        .tile:hover {
+            background: rgba(255, 165, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        .tile h4 {
+            font-size: 18px;
+            color: #f39c12;
+        }
+
+        .tile p {
+            font-size: 16px;
+            color: #bbb;
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* CV Link */
+        .cv-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .cv-link a {
+            color: #f39c12;
+            font-size: 18px;
+            text-decoration: none;
+            border-bottom: 2px solid #f39c12;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .cv-link a:hover {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .info-tiles {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tile {
+                width: 90%;
+                margin-bottom: 15px;
             }
         }
-    </script>
+    </style>
 
-
-    <!-- Experience -->
-    <section id="experience" class="main custom-style fullscreen">
-        <div class="content-container">
-            <header>
-                <h2>Experience</h2>
-            </header>
-            <ul>
-                <li>
-                    <strong>Post Doctoral Fellow, University of Birmingham</strong> (July 2024–Present)
-                    <p>Conducting research on GRBs and gravitational wave counterparts using advanced data analysis techniques.</p>
-                </li>
-                <li>
-                    <strong>Post Doctoral Fellow, Chennai Mathematical Institute</strong> (Nov 2023–June 2024)
-                    <p>Applied machine learning to classify GRB progenitors and analyze high-energy data.</p>
-                </li>
-                <li>
-                    <strong>Senior Research Fellow, ARIES</strong> (July 2020–Nov 2023)
-                    <p>Characterized the 4K x 4K CCD Camera for the 3.6m DOT and led observational campaigns.</p>
-                </li>
-                <li>
-                    <strong>Junior Research Fellow, ARIES</strong> (July 2018–July 2020)
-                    <p>Conducted observations with 1.3m DFOT and 1m ST telescopes, contributing to GRB research.</p>
-                </li>
-            </ul>
+    <div class="content">
+        <!-- Left Side: Profile -->
+        <div class="left-side">
+            <img src="assets/my_files/Dimple.jpg" alt="Dimple">
+            <h1>Dimple</h1>
+            <h3>Postdoctoral Fellow</h3>
+            <p>University of Birmingham, UK</p>
         </div>
+
+        <!-- Right Side: About Me -->
+        <div class="right-side">
+            <h2>About Me</h2>
+            <p>
+                I am a postdoctoral researcher in High Energy Astrophysics, specializing in Gamma-Ray Bursts (GRBs) and their cosmic significance.
+                My journey began at Kurukshetra University, where I earned my M.Sc. in Physics, followed by a PhD at DDU Gorakhpur University.
+                I integrate observational data with machine learning to explore the universe's most energetic events.
+            </p>
+
+            <!-- Info Tiles -->
+            <div class="info-tiles">
+                <div class="tile" onclick="toggleInfo('eduInfo', this)">
+                    <h4>Education</h4>
+                    <p id="eduInfo">PhD in Astrophysics from Aryabhatta Research Institute of Observational Sciences (ARIES).</p>
+                </div>
+
+                <div class="tile" onclick="toggleInfo('researchInfo', this)">
+                    <h4>Research Interests</h4>
+                    <p id="researchInfo">Studying Gamma-Ray Bursts and their role in understanding cosmic evolution.</p>
+                </div>
+
+                <div class="tile" onclick="toggleInfo('personalInfo', this)">
+                    <h4>Personal Interests</h4>
+                    <p id="personalInfo">Avid traveler and dancer, enjoying diverse cultures and rhythms.</p>
+                </div>
+            </div>
+
+            <!-- CV Link -->
+            <div class="cv-link">
+                <p><a href="assets/my_files/Dimple_CV.pdf">Click here for my CV</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleInfo(infoId, clickedElement) {
+        const info = document.getElementById(infoId);
+        const isVisible = info.style.display === 'block';
+
+        // Hide all other info panels
+        document.querySelectorAll('.info-tiles p').forEach(p => p.style.display = 'none');
+
+        // Show only the clicked one
+        info.style.display = isVisible ? 'none' : 'block';
+    }
+</script>
+
+
+<!-- Experience -->
+<section id="experience" class="main custom-style fullscreen">
+    <style>
+        /* Experience Section Styling */
+        #experience {
+            background: #111;
+            color: #ddd;
+            padding: 60px 20px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Centered Timeline Bar */
+        .timeline {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Vertical Bar */
+        .timeline::before {
+            content: "";
+            position: absolute;
+            width: 4px;
+            background: #f39c12; /* Golden vertical bar */
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Year Box */
+        .year {
+            position: relative;
+            background: #f39c12;
+            color: #111;
+            padding: 8px 12px;
+            font-weight: bold;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        /* Experience Items */
+        .experience-item {
+            position: relative;
+            background: #222;
+            padding: 20px;
+            width: 40%;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .experience-item:hover {
+            transform: scale(1.05);
+        }
+
+        .experience-item strong {
+            color: #f39c12;
+            font-size: 18px;
+        }
+
+        .experience-item p {
+            font-size: 16px;
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        /* Horizontal Line Connecting to Timeline */
+        .experience-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 900px;
+            position: relative;
+        }
+
+        .experience-wrapper::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            background: #f39c12;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .experience-wrapper.left::before {
+            left: 50%;
+            transform: translateX(-100%);
+        }
+
+        .experience-wrapper.right::before {
+            right: 50%;
+        }
+
+        /* Left-aligned and Right-aligned Experience Items */
+        .experience-wrapper.left .experience-item {
+            text-align: right;
+        }
+
+        .experience-wrapper.right .experience-item {
+            text-align: left;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .experience-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .experience-wrapper.left::before,
+            .experience-wrapper.right::before {
+                display: none;
+            }
+
+            .experience-item {
+                width: 90%;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <div class="content-container">
+        <header>
+            <h2 style="color: #f39c12;">Experience</h2>
+        </header>
         
-    </section>
+        <div class="timeline">
+            
+            <div class="experience-wrapper left">
+                <div class="experience-item">
+                    <strong>Post Doctoral Fellow, University of Birmingham</strong>
+                    <p>Conducting research on GRBs and gravitational wave counterparts using advanced data analysis techniques.</p>
+                </div>
+                <span class="year">2024-Present</span>
+            </div>
+
+            <div class="experience-wrapper right">
+                <span class="year">2023-2024</span>
+                <div class="experience-item">
+                    <strong>Post Doctoral Fellow, Chennai Mathematical Institute</strong>
+                    <p>Applied machine learning to classify GRB progenitors and analyze high-energy data.</p>
+                </div>
+            </div>
+
+            <div class="experience-wrapper left">
+                <div class="experience-item">
+                    <strong>Senior Research Fellow, ARIES</strong>
+                    <p>Characterized the 4K x 4K CCD Camera for the 3.6m DOT and led observational campaigns.</p>
+                </div>
+                <span class="year">2020-2023</span>
+            </div>
+
+            <div class="experience-wrapper right">
+                <span class="year">2018-2020</span>
+                <div class="experience-item">
+                    <strong>Junior Research Fellow, ARIES</strong>
+                    <p>Conducted observations with 1.3m DFOT and 1m ST telescopes, contributing to GRB research.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
 <!-- Research Interests & Projects -->
