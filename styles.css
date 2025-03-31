@@ -126,3 +126,140 @@ nav .logo {
         max-width: 90%;
     }
 }
+
+/* Combined and Styled Footer */
+#footer-container {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Some padding top and bottom */
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #333; /* Subtle line to separate top and bottom */
+}
+
+#footer .icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#footer .icons li {
+    margin-right: 15px;
+}
+
+#footer .icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em; /* Larger icons */
+    opacity: 0.7; /* Slightly faded */
+    transition: opacity 0.3s ease;
+}
+
+#footer .icons a:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+#footer .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#footer .menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ftco-footer {
+    padding: 50px 0;
+}
+
+.ftco-footer .ftco-footer-widget h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 1.5em;
+}
+
+.ftco-footer p {
+    color: rgba(255, 255, 255, 0.7); /* Slightly transparent white */
+}
+
+.ftco-footer .ftco-heading-2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.ftco-footer .list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ftco-footer .list-unstyled li a {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 5px 0;
+    display: block;
+    text-decoration: none;
+}
+
+.ftco-footer .list-unstyled li a .icon-long-arrow-right {
+    margin-right: 10px;
+}
+
+.ftco-footer .block-23 {
+    margin-top: 20px;
+}
+
+.ftco-footer .block-23 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ftco-footer .block-23 ul li {
+    margin-bottom: 15px;
+}
+
+.ftco-footer .block-23 ul li .icon {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 15px;
+}
+
+.ftco-footer .block-23 ul li .text {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.ftco-footer .text-center {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ftco-footer .text-center p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.ftco-footer .text-center p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ftco-footer .text-center p a:hover {
+    text-decoration: underline;
+}
+
+.color-danger {
+    color: #dc3545; /* A subtle red for the heart icon */
+}
