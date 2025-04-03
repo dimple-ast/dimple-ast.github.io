@@ -322,7 +322,7 @@
             position: relative;
         }
 
-        /* Centered Timeline Bar */
+        /* Timeline */
         .timeline {
             position: relative;
             display: flex;
@@ -330,29 +330,16 @@
             align-items: center;
         }
 
-        /* Vertical Bar */
+        /* Vertical Timeline Bar */
         .timeline::before {
             content: "";
             position: absolute;
             width: 4px;
-            background: #f39c12; /* Golden vertical bar */
+            background: #f39c12;
             top: 0;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-        }
-
-        /* Year Box */
-        .year {
-            position: relative;
-            background: #f39c12;
-            color: #111;
-            padding: 8px 12px;
-            font-weight: bold;
-            border-radius: 4px;
-            display: inline-block;
-            margin: 20px 0;
-            font-size: 16px;
         }
 
         /* Experience Items */
@@ -381,7 +368,7 @@
             line-height: 1.6;
         }
 
-        /* Horizontal Line Connecting to Timeline */
+        /* Experience Wrapper */
         .experience-wrapper {
             display: flex;
             align-items: center;
@@ -389,9 +376,12 @@
             width: 100%;
             max-width: 900px;
             position: relative;
+            padding: 10px 0;
         }
 
-        .experience-wrapper::before {
+        /* Timeline Sticks */
+        .experience-wrapper.left::before,
+        .experience-wrapper.right::before {
             content: "";
             position: absolute;
             width: 30px;
@@ -402,15 +392,13 @@
         }
 
         .experience-wrapper.left::before {
-            left: 50%;
-            transform: translateX(-100%);
-        }
-
-        .experience-wrapper.right::before {
             right: 50%;
         }
 
-        /* Left-aligned and Right-aligned Experience Items */
+        .experience-wrapper.right::before {
+            left: 50%;
+        }
+
         .experience-wrapper.left .experience-item {
             text-align: right;
         }
@@ -448,7 +436,7 @@
             <div class="experience-wrapper left">
                 <div class="experience-item">
                     <strong>Post Doctoral Fellow, University of Birmingham</strong>
-                    <p>Conducting research on GRBs and gravitational wave counterparts using advanced data analysis techniques.</p>
+                    <p>Researching gamma-ray bursts and kilonovae driven by compact binary mergers. Collaborating with Dr. Ben Gompertz and leading transient-focused groups including STARGATE, ENGRAVE, GOTO, and LSST:UK.</p>
                 </div>
                 <span class="gradient-button">2024-Present</span>
             </div>
@@ -457,14 +445,14 @@
                 <span class="gradient-button">2023-2024</span>
                 <div class="experience-item">
                     <strong>Post Doctoral Fellow, Chennai Mathematical Institute</strong>
-                    <p>Applied machine learning to classify GRB progenitors and analyze high-energy data.</p>
+                    <p>Explored multi-messenger aspects of compact binaries, studying gravitational waves and GRBs in collaboration with Prof. K.G. Arun and Dr. Shasvath Kapadia.</p>
                 </div>
             </div>
 
             <div class="experience-wrapper left">
                 <div class="experience-item">
                     <strong>Senior Research Fellow, ARIES</strong>
-                    <p>Characterized the 4K x 4K CCD Camera for the 3.6m DOT and led observational campaigns.</p>
+                    <p>Investigated GRB classification using machine learning techniques to identify distinct subpopulations. Completed PhD under the supervision of Dr. Kuntal Misra.</p>
                 </div>
                 <span class="gradient-button">2020-2023</span>
             </div>
@@ -473,13 +461,14 @@
                 <span class="gradient-button">2018-2020</span>
                 <div class="experience-item">
                     <strong>Junior Research Fellow, ARIES</strong>
-                    <p>Conducted observations with 1.3m DFOT and 1m ST telescopes, contributing to GRB research.</p>
+                    <p>Worked on instrumentation, characterizing deep-depletion CCD detectors for the Devasthal Faint Object Spectrograph. Initiated research in GRBs via optical afterglows.</p>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
+
 
 <style>
 /* Research Section Background */
@@ -664,10 +653,10 @@
         <!-- Research Grid (2x2) -->
         <div class="research-grid">
             <div class="grid-box" onclick="toggleText(this)">
-                <img src="assets/images/figure1.png" alt="Classification of GRBs">
+                <img src="assets/images/figure4.png" alt="Classification of GRBs">
                 <h4>Classification of GRBs</h4>
                 <p class="short-text">
-                    Using machine learning, I analyze GRB properties beyond the traditional short/long classification, which has faced many challenges recently. Techniques like UMAP embeddings and clustering help uncover hidden structures in GRB populations, offering new insights into their diverse physical origins. By leveraging large datasets and advanced algorithms, my work aims to identify novel GRB classes and refine classification accuracy. This approach not only deepens our understanding of GRBs but also has potential applications in identifying unique astrophysical events.
+                    In this project, we analyze GRB properties beyond the traditional short/long classification, which has faced many challenges recently. Techniques like UMAP embeddings and clustering help uncover hidden structures in GRB populations, offering new insights into their diverse physical origins. By leveraging large datasets and advanced algorithms, my work aims to identify novel GRB classes and refine classification accuracy. This approach not only deepens our understanding of GRBs but also has potential applications in identifying unique astrophysical events.
                 </p>
             </div>
 
@@ -675,19 +664,19 @@
                 <img src="assets/images/figure2.png" alt="Merger Rate Estimations">
                 <h4>Merger Rate Estimations</h4>
                 <p class="short-text">
-                    We analyze the rates of compact binary mergers by combining data from Gamma-Ray Bursts (GRBs) and gravitational wave (GW) observations. By correlating GRB signals with GW detections, I aim to refine our understanding of merger rates and the distribution of compact binary systems across different environments and redshifts. This work enhances our knowledge of binary merger populations and contributes to multi-messenger astronomy.
+                    This project aims to estimate the rates of compact binary mergers by combining data from Gamma-Ray Bursts (GRBs) and gravitational wave (GW) observations. By correlating GRB signals with GW detections, I aim to refine our understanding of merger rates and the distribution of compact binary systems across different environments and redshifts. This work enhances our knowledge of binary merger populations and contributes to multi-messenger astronomy.
             </div>
 
             <div class="grid-box" onclick="toggleText(this)">
                 <img src="assets/images/figure3.png" alt="Short GRB Progenitors">
                 <h4>Short GRB Progenitors</h4>
                 <p class="short-text">
-                    My research focuses on the progenitors of short-duration GRBs, exploring their connection to compact binary mergers and collapsars. By studying short GRBs at high redshifts, I aim to probe the early universe, enhancing our understanding of stellar evolution and galaxy formation. This work includes analyzing observational data to estimate redshifts and refine models of GRB origins, while also participating in follow-up campaigns to observe GRB afterglows and search for associated phenomena like kilonovae.
+                    The project focuses on Investigating the progenitors of short-duration GRBs, exploring their connection to compact binary mergers and collapsars. By studying short GRBs at high redshifts, I aim to probe the early universe, enhancing our understanding of stellar evolution and galaxy formation. This work includes analyzing observational data to estimate redshifts and refine models of GRB origins, while also participating in follow-up campaigns to observe GRB afterglows and search for associated phenomena like kilonovae.
                 </p>
             </div>
 
             <div class="grid-box" onclick="toggleText(this)">
-                <img src="assets/images/figure4.png" alt="High-Redshift GRBs">
+                <img src="assets/images/figure1.png" alt="High-Redshift GRBs">
                 <h4>Kilonovae: Identification, Rates, and JWST Observations</h4>
                 <p class="short-text">
                     This work focuses on the identification and study of kilonovae, the transient events resulting from compact binary mergers, such as neutron star mergers. By analyzing the observational signatures of kilonovae, including light curve patterns and spectral features, I aim to refine methods for their detection. Additionally, I investigate the rates of kilonovae, linking them to the underlying compact binary merger rates. With the upcoming capabilities of the James Webb Space Telescope (JWST), I plan to enhance kilonova detection at high redshifts, providing deeper insights into their role in r-process nucleosynthesis and their contribution to heavy element formation in the universe.
@@ -1190,13 +1179,13 @@
                 }
             }
         </style>
-    
+    <!-- Somewhere, something incredible is waiting to be known. Karl sagan -->
         <footer id="footer">
             <div class="footer-content">
                 <!-- Column 1: Confucius Quote -->
                 <div class="footer-column">
-                    <p>"Add your favourite quote here."</p>
-                    <b><a href="https://plato.stanford.edu/entries/confucius/" target="_blank">- Quote Author</a></b>
+                    <p>"The universe is under no obligation to make sense to you."</p>
+                    <b><a href="https://plato.stanford.edu/entries/" target="_blank">- Neil deGrasse Tyson</a></b>
                 </div>
     
                 <!-- Column 2: Links -->
