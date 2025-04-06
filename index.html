@@ -16,10 +16,11 @@
         <ul>
             <li><a class="nav-link" href="#intro">About</a></li>
             <li><a class="nav-link" href="#experience">Experience</a></li>
-            <li><a class="nav-link" href="#research">Research Interests</a></li>
+            <li><a class="nav-link" href="#research">Research </a></li>
     
             <li><a class="nav-link" href="#Publications">Publications</a></li>
             <li><a class="nav-link" href="#outreach">Outreach</a></li>
+            <li><a class="nav-link" href="#expressions">Expressions</a></li>
             <li><a class="nav-link" href="#footer">Contact</a></li>
         </ul>
     </nav>
@@ -427,9 +428,9 @@
             }
             .year {
                 color: #f39c12;
-                font-weight: italic;
-                font-size: 1px;
-                margin-right: -10px;  /* Bring year closer to line */
+                font-weight: bold;
+                font-size: 20px;
+                margin-right: -40px;  /* Bring year closer to line */
                 }
         }
     </style>
@@ -444,14 +445,13 @@
             <div class="experience-wrapper left">
                 <div class="experience-item">
                     <strong>Post Doctoral Fellow, University of Birmingham</strong>
-                    <p >Working on gamma-ray bursts and kilonovae driven by compact binary mergers. Collaborating with Dr. Ben Gompertz and transient-focused groups including STARGATE, ENGRAVE, GOTO, and LSST:UK.</p>
+                    <p >Working on gamma-ray bursts and kilonovae driven by compact binary mergers in collaboration with Dr. Ben Gompertz and transient-focused groups including STARGATE, ENGRAVE, GOTO, and LSST:UK.</p>
                 </div>
                 <span class="gradient-button">2024-Present</span>
             </div>
 
             <div class="experience-wrapper right">
-                <div class="gradient-button">
-                    <span class="year">2023-2024</span></div>
+                <span class="gradient-button">2023-2024</span>
                 <div class="experience-item">
                     <strong>Post Doctoral Fellow, Chennai Mathematical Institute</strong>
                     <p>Explored multi-messenger aspects of compact binaries, studying gravitational waves and GRBs in collaboration with Prof. K.G. Arun and Dr. Shasvath Kapadia.</p>
@@ -897,6 +897,16 @@
         text-align: center;
         padding: 5%;
     }
+
+    #expressions {
+        background: url('assets/my_files/background.jpg') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5%;
+    }
     
     /* Main Box Container (Text + Slideshow) */
     .publications-container {
@@ -1010,6 +1020,7 @@
                         <img src="assets/thumbnails/1739294987202_thumb.jpg" onclick="openImage('assets/highres/1739294987202.jpg')" alt="Image 3">
                         <img src="assets/thumbnails/1739294987223_thumb.jpg" onclick="openImage('assets/highres/1739294987223.jpg')" alt="Image 4">
                         <img src="assets/thumbnails/1739294987239_thumb.jpg" onclick="openImage('assets/highres/1739294987239.jpg')" alt="Image 5">
+                    
                         <img src="assets/thumbnails/DSC_3333_thumb.jpg" onclick="openImage('assets/highres/DSC_3333.jpg')" alt="Image 6">
                         <img src="assets/thumbnails/DSC_3352_thumb.jpg" onclick="openImage('assets/highres/DSC_3352.jpg')" alt="Image 7">
                         <img src="assets/thumbnails/final_thumb.jpg" onclick="openImage('assets/highres/final.jpg')" alt="Image 8">
@@ -1032,6 +1043,79 @@
         <img id="overlay-image" src="" alt="Enlarged Image">
     </div>
 </section>
+
+
+<style>
+.mosaic-gallery {
+    display: grid;
+    grid-auto-flow: column; /* Important: Force horizontal scroll */
+    grid-template-rows: repeat(3, 1fr);  /* 3 rows */
+    gap: 0px; /* No gap between images */
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    -ms-overflow-style: auto;
+}
+
+.mosaic-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.mosaic-gallery::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.mosaic-gallery img {
+    width: auto;
+    max-height: 250px;  /* You can increase/decrease */
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+</style>
+
+<section id="expressions" class="main custom-style fullscreen">
+    <div class="publications-container">
+        <header>
+            <h2>Expressions</h2>
+            <p>
+                Research inspires my mind, but dance and creativity nourish my soul. 
+                Movement, rhythm, and visual storytelling allow me to explore the world beyond equations and data. 
+                Here are fragments of my journey — moments that remind me to stay curious, expressive, and alive.
+            </p>
+        </header>
+
+        <!-- Mosaic Gallery -->
+        <div class="mosaic-gallery">
+            <img src="assets/thumbnails/Dimple_11_thumb.jpeg" onclick="openImage('assets/highres/Dimple_11.jpeg')" alt="Image 1">
+            <img src="assets/thumbnails/BKJ_6306_thumb.JPG" onclick="openImage('assets/highres/BKJ_6306.JPG')" alt="Image 3">
+            <img src="assets/thumbnails/friends_9_thumb.jpg" onclick="openImage('assets/highres/friends_9.jpg')" alt="Image 4">
+            <img src="assets/thumbnails/473777354_3492962544338220_1101951182105912151_n_thumb.jpg" onclick="openImage('assets/highres/473777354_3492962544338220_1101951182105912151_n.jpg')" alt="Image 5">
+            <img src="assets/thumbnails/IMG_20221107_165852_thumb.jpg" onclick="openImage('assets/highres/IMG_20221107_165852.jpg')" alt="Image 6">
+            <img src="assets/thumbnails/BKJ_6266_thumb.JPG" onclick="openImage('assets/highres/BKJ_6266.JPG')" alt="Image 7">
+            <img src="assets/thumbnails/image_thumb.jpeg" onclick="openImage('assets/highres/image.jpeg')" alt="Image 8">
+            <img src="assets/thumbnails/dimpi_2_thumb.jpg" onclick="openImage('assets/highres/dimpi_2.jpg')" alt="Image 9">
+            <img src="assets/thumbnails/me_1_thumb.jpg" onclick="openImage('assets/highres/me_1.jpg')" alt="Image 10">
+            <img src="assets/thumbnails/1739294987454_thumb.jpg" onclick="openImage('assets/highres/1739294987454.jpg')" alt="Image 11">
+            <img src="assets/thumbnails/473291343_3487534044881070_3739855353331265931_n_thumb.jpg" onclick="openImage('assets/highres/473291343_3487534044881070_3739855353331265931_n.jpg')" alt="Image 12">
+            <img src="assets/thumbnails/hry_3_thumb.jpeg" onclick="openImage('assets/highres/hry_3.jpeg')" alt="Image 13">
+            <img src="assets/thumbnails/image3_thumb.jpeg" onclick="openImage('assets/highres/image3.jpeg')" alt="Image 14">
+            <img src="assets/thumbnails/Dimple_16_thumb.jpeg" onclick="openImage('assets/highres/Dimple_16.jpeg')" alt="Image 15">
+            <img src="assets/thumbnails/IMG_20250301_155704_thumb.jpg" onclick="openImage('assets/highres/IMG_20250301_155704.jpg')" alt="Image 16">
+            <img src="assets/thumbnails/hry_4_thumb.jpeg" onclick="openImage('assets/highres/hry_4.jpeg')" alt="Image 17">
+            <img src="assets/thumbnails/1739294987503_thumb.JPG" onclick="openImage('assets/highres/1739294987503.JPG')" alt="Image 18">
+            <img src="assets/thumbnails/image6_thumb.jpeg" onclick="openImage('assets/highres/image6.jpeg')" alt="Image 19">
+            <img src="assets/thumbnails/me_thumb.jpeg" onclick="openImage('assets/highres/me.jpeg')" alt="Image 20">
+        </div>
+        
+        
+    </div>
+</section>
+
 
 
 
